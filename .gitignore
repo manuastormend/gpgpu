@@ -1,0 +1,32 @@
+# Compilados y binarios C/C++
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+
+# Carpetas de build comunes
+build/
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Archivos temporales / editor
+*.tmp
+*.log
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
