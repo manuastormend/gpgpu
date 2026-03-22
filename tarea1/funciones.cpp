@@ -15,9 +15,22 @@ void recorrida(int arr[tam],int index[tam]){
     }
 }
 
+void recorridaChars(char arr[tam],int index[tam]){
+    //accedo a las posiciones de memoria segun me indique mi arreglo index
+    for(int i = 0; i<tam; i++){
+        arr[index[i]]= 'b';
+    }
+}
+
 void inicializar(int arr[tam]){
     for(int i = 0; i<tam; i++){
         arr[i]= i;
+    }
+}
+
+void inicializarChars(char arr[tam]){
+    for(int i = 0; i<tam; i++){
+        arr[i]= 'a';
     }
 }
 

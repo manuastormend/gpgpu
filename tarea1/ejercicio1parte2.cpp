@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-int arreglo[tam];//100 Millones de chars = 100MB
+char arreglo[tam];//100 Millones de chars = 100MB
 int indicesMezclados[tam];
 
 int main() {
@@ -12,7 +12,7 @@ int main() {
     clock_t inicioMezcla, finMezcla;
     double tiempoMezcla;
     inicioMezcla = clock();
-    inicializar(arreglo);
+    inicializarChars(arreglo);
     inicializar(indicesMezclados);
     //mezclamos los numeros
     mezclar(indicesMezclados);
@@ -24,7 +24,7 @@ int main() {
     clock_t inicio, fin;
     double tiempo;
     inicio = clock();
-    recorrida(arreglo,indicesMezclados);
+    recorridaChars(arreglo,indicesMezclados);
     fin = clock();
     tiempo = (double)(fin - inicio) / CLOCKS_PER_SEC;
     printf("Tiempo de ejecución: %f segundos\n", tiempo);
