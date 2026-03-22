@@ -10,7 +10,9 @@
 const int tam = 100000000; // 100 millones
 
 void recorrida(int arr[tam], int index[tam]);
+void recorridaChars(char arr[tam],int index[tam]);
 void inicializar(int arr[tam]);
+void inicializarChars(char arr[tam]);
 void mezclar(int arr[tam]);
 void imprimirTiempo(double tiempoSegundos);
 void matrix_mult ( float *A , float *B , float *C , int N, int BS);

@@ -3,13 +3,13 @@
 #include <time.h>
 
 
-int arreglo[tam];//100 Millones de chars = 100MB
+char arreglo[tam];//100 Millones de chars = 100MB
 int indicesOrdenados[tam];
 
 int main() {
 
     //inicializo arreglos
-    inicializar(arreglo);  
+    inicializarChars(arreglo);  
     inicializar(indicesOrdenados);
 
 
@@ -17,7 +17,7 @@ int main() {
     clock_t inicio, fin;
     double tiempo;
     inicio = clock();
-    recorrida(arreglo,indicesOrdenados);
+    recorridaChars(arreglo,indicesOrdenados);
     fin = clock();
     tiempo = (double)(fin - inicio) / CLOCKS_PER_SEC;
     printf("Tiempo de ejecución: %f segundos\n", tiempo);
